@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Movies</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
+</head>
+<style>
+	#spongebob {
+		background-image:url("images/spongebob.jpg");		
+	}
+</style>
+<script>
+
+		function leftFunction(){
+			var x = document.getElementById('james').innerHTML;
+			if (x == "Lea") {
+				document.getElementById('jamespic').src = 'images/James.jpg';
+				document.getElementById('james').innerHTML = "James";
+				document.getElementById('testtext').innerHTML = "'This is one of the best movie sites I've ever visited.'";
+			} else if (x == "Teodora") {
+				document.getElementById('jamespic').src = 'images/lea.jpg';
+				document.getElementById('james').innerHTML = "Lea";
+				document.getElementById('testtext').innerHTML = "'Nice movies, laugh, fun, pleasure.'";
+			} else if (x == "Sam") {
+				document.getElementById('jamespic').src = 'images/teodora.jpg';
+				document.getElementById('james').innerHTML = "Teodora";
+				document.getElementById('testtext').innerHTML = "'The reviews are awesome and the collection of movies contains everything.'";
+			}
+		}
+		
+		function rightFunction(){
+			var y = document.getElementById('james').innerHTML;
+			if (y == "James") {
+				document.getElementById('jamespic').src = 'images/lea.jpg';
+				document.getElementById('james').innerHTML = "Lea";
+				document.getElementById('testtext').innerHTML = "'Nice movies, laugh, fun, pleasure.'";
+			} else if (y == "Lea") {
+				document.getElementById('jamespic').src = 'images/teodora.jpg';
+				document.getElementById('james').innerHTML = "Teodora";
+				document.getElementById('testtext').innerHTML = "'The reviews are awesome and the collection of movies contains everything.'";
+			} else if (y == "Teodora") {
+				document.getElementById('jamespic').src = 'images/sam.jpg';
+				document.getElementById('james').innerHTML = "Sam";
+				document.getElementById('testtext').innerHTML = "'TOP!'";
+			}
+		}
+		
+		function showPic1() {
+			document.getElementById('secondhead').innerHTML = 'The Sponge Bob Movie';
+			document.getElementById('description').innerHTML = "SpongeBob SquarePants takes eave from the town of Bikini Bottom in order to track down King Neptune's stolen crown.";
+			document.getElementById('spongebob').style.backgroundImage = "url('images/spongebob.jpg')";
+		}
+		function showPic2() {
+			document.getElementById('secondhead').innerHTML = 'Resident Evil: The Final Chapter';
+			document.getElementById('description').innerHTML = "Alice, the only survivor of what was meant to be humanity's final stand against undead. Now she returns to Raccoon City.";
+			document.getElementById('spongebob').style.backgroundImage = "url('images/resident.jpg')";
+		}
+		function showPic3() {
+			document.getElementById('secondhead').innerHTML = 'The Revenant';
+			document.getElementById('description').innerHTML = "A frontiersman on a fur trading expedition fights for survival after being mauled by a bear and left for dead by his team.";
+			document.getElementById('spongebob').style.backgroundImage = "url('images/revenant.jpg')";
+		}
+		
+		</script>
+<body>
+<div>
+			<header>
+				<div>
+					<h1 id="firsthead">MOVIES</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#map">ABOUT</a></li>
+						<li><a href="#moremov">MOST POPULAR</a></li>
+						<li><a href="#spongebob">NEWS</a></li>
+						<li><a href="#copyright">CONTACTS</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div>
+				<section id="categories">
+					<ul>
+						<li>CINEMA MOVIES</li>
+						<li>TV SERIES</li>
+						<li>CARTOONS</li>
+						<li>ANIME</li>
+						<li>NEW MOVIES</li>
+						<li>HD MOVIES</li>
+					</ul>
+				</section>
+				<section id="spongebob">
+					<h1 id="secondhead">The Sponge Bob Movie</h1>
+					<div id="sometext">
+						<p id='description'>SpongeBob SquarePants takes eave from the town of Bikini Bottom in order to track down King Neptune's 
+						stolen crown.
+						</p>
+					</div>
+					<input type="button" id="leftbtn" value="LEARN MORE" onclick="location.href='http://www.imdb.com/movies-in-theaters/?ref_=nv_tp_inth_1'" />
+					<input type="button" id="rightbtn" value="WATCH TRAILER" onclick="location.href='http://www.imdb.com/trailers'"/>
+					<img src='images/spongebob.jpg' alt='spongebob' onclick="showPic1();"/>
+					<img src='images/resident.jpg' alt='evil' onclick="showPic2();"/>
+					<img src='images/revenant.jpg' alt='revenant' onclick="showPic3();"/>
+				</section>
+			</div>
+				<section id="favmov">
+					<h2>Watch your favourite movies online</h2>
+					<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. 
+					Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et 
+					magnis dis parturientmontes nascetur ridiculus mus. Nulla dui. Fusce feugiat ma lesuada odio. Morbi nunc odio 
+					gravida atcursus nec.			
+					</p>
+				<div>
+					<div id="chbox1" class="checkbox">
+						<input id="check1" type="checkbox" name="check1" value="check1">
+						<label for="check1">Action</label><br />
+						<input id="check2" type="checkbox" name="check2" value="check2">
+						<label for="check2">Adventure</label><br />
+						<input id="check3" type="checkbox" name="check3" value="check3">
+						<label for="check3">Animation</label><br />
+						<input id="check4" type="checkbox" name="check4" value="check4">
+						<label for="check4">Biography</label><br />
+						<input id="check5" type="checkbox" name="check5" value="check5">
+						<label for="check5">Comedy</label><br />
+					</div>
+					<div id="chbox2" class="checkbox">
+						<input id="check6" type="checkbox" name="check6" value="check6">
+						<label for="check6">Crime</label><br />
+						<input id="check7" type="checkbox" name="check7" value="check7">
+						<label for="check7">Documentary</label><br />
+						<input id="check8" type="checkbox" name="check8" value="check8">
+						<label for="check8">Drama</label><br />
+						<input id="check9" type="checkbox" name="check9" value="check9">
+						<label for="check9">Fantasy</label><br />
+						<input id="check10" type="checkbox" name="check10" value="check10">
+						<label for="check10">History</label>
+					</div>
+					<div id="chbox3" class="checkbox">
+						<input id="check11" type="checkbox" name="check11" value="check11">
+						<label for="check11">Horror</label><br />
+						<input id="check12" type="checkbox" name="check12" value="check12">
+						<label for="check12">Kids</label><br />
+						<input id="check13" type="checkbox" name="check13" value="check13">
+						<label for="check13">Music</label><br />
+						<input id="check14" type="checkbox" name="check14" value="check14">
+						<label for="check14">Mystery</label><br />
+						<input id="check15" type="checkbox" name="check15" value="check15">
+						<label for="check15">Romance</label><br />
+					</div>
+					<div id="chbox4" class="checkbox">
+						<input id="check16" type="checkbox" name="check16" value="check16">
+						<label for="check16">Sci-Fi</label><br />
+						<input id="check17" type="checkbox" name="check17" value="check17">
+						<label for="check17">Sport</label><br />
+						<input id="check18" type="checkbox" name="check18" value="check18">
+						<label for="check18">Thriller</label><br />
+						<input id="check19" type="checkbox" name="check19" value="check19">
+						<label for="check19">War</label><br />
+						<input id="check20" type="checkbox" name="check20" value="check20">
+						<label for="check20">Western</label><br />
+					</div>
+				</div>	
+				<form method="post"><input type="button" style="cursor:pointer" value="SEARCH" onclick="location.href='http://www.imdb.com/movies-coming-soon/?ref_=ft_cs'" /></form>		
+			</section>
+			<section id="moremov">
+				<h1 id="morehead">Most popular</h1>
+				<figure style="float:left;">
+    				<img src='images/image1.jpg' alt='i1'/>
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Cum stoque penat</figcaption>
+				</figure>
+				<figure style="float:left;">
+    				<img src='images/image2.jpg' alt='i2' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Fibus et magnis</figcaption>
+				</figure>
+				<figure style="clear:both; float:left;">
+    				<img src='images/image3.jpg' alt='i3' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Cum sociis</figcaption>
+				</figure>
+				<figure style="float:left;">
+    				<img src='images/image4.jpg' alt='i4' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Natoque penus et</figcaption>
+				</figure>
+				<figure style="clear:both; float:left;">
+    				<img src='images/image5.jpg' alt='i5' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Natoque penat</figcaption>
+				</figure>
+				<figure style="float:left;">
+    				<img src='images/image6.jpg' alt='i6' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Fibus et magnis</figcaption>
+				</figure>
+				<figure style="clear:both; float:left;">
+    				<img src='images/image7.jpg' alt='i7' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Cum stoque penat</figcaption>
+				</figure>
+				<figure style="float:left;">
+    				<img src='images/image8.jpg' alt='i8' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Natoque penus</figcaption>
+				</figure>
+				<figure style="clear:both; float:left;">
+    				<img src='images/image9.jpg' alt='i9' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Cum soci oque</figcaption>
+				</figure>
+				<figure style="float:left;">
+    				<img src='images/image10.jpg' alt='i10' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Fibus et magnis</figcaption>
+				</figure>
+				<figure style="clear:both; float:left;">
+    				<img src='images/image11.jpg' alt='i11' />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Sociis natoque</figcaption>
+				</figure>
+				<figure style="float:left;">
+    				<img src='images/image12.jpg' alt='i12' height="522.95px;" />
+    				<span class="likes">450 </span><span class="likes">01:27:34 </span><span class="likes">367</span>
+    				<div class='black'>
+    					<span><i class="fa fa-eye" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+    					<span><i class="fa fa-heart" aria-hidden="true"></i></span>
+    				</div>
+    				<figcaption>Cum stoque penat</figcaption>
+				</figure>
+				<button id="view">VIEW MORE</button>
+			</section>
+			<section id="testimonial">
+				<h1 id="testhead">Testimonials</h1>
+				<div class="image-cropper"><img id="jamespic" src="images/James.jpg" alt="fan" height="180px" width="120px;" /></div>
+				<div>
+				<p id="james">James</p>
+				<i class="fa fa-chevron-circle-left" onclick="leftFunction();" style="font-size:56px; cursor:pointer" ></i>
+				<i class="fa fa-chevron-circle-right" onclick="rightFunction();" style="font-size:56px; cursor:pointer"></i>
+				<p id="testtext">'This is one of the best movie sites I've ever visited.'</p>
+				</div>
+			</section>
+			<section id="mail">
+				<h1>Mail us</h1>
+				<div><input type="text" name="Name" placeholder="Your Name"/></div>
+				<div><input type="text" name="Mail" placeholder="Your Email"/></div>
+				<div><input type="text" name="Message" placeholder="Your Message"/></div>	
+				<form method="post"><button type='submit'>SEND</button></form>	 
+			</section>
+			<section id="map"><div style="overflow:hidden;width:100%;height:700px;resize:none;max-width:100%;"><div id="gmap-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Infinity+Tower,+Sofia,+Bulgaria&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embed-map-html" href="http://www.dog-checks.com/dachshund-checks" id="make-map-data">dachshund checks</a><style>#gmap-display img{max-width:none!important;background:none!important;font-size: inherit;}</style></div><script src="https://www.dog-checks.com/google-maps-authorization.js?id=1cb5e702-ee64-2ebd-eada-f28990297f30&c=embed-map-html&u=1468076698" defer="defer" async="async"></script></section>
+			<footer>
+				<p id="copyright">Movies &copy; 2015.Privacy Policy</p>
+				<p id="tel">Questions? Call Us Toll Free: (012) 123-456-7890</p>
+				<div id="icons">
+					<ul>
+						<li id="tw">
+							<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" style="font-size:40px;"></i></a>
+						</li>
+						<li id="fb">
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" style="font-size:40px;"></i></a>
+						</li>
+						<li id="in">
+							<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:40px;"></i></a>
+						</li>			
+					</ul>
+				</div>
+			</footer>
+		</div>
+</body>
+</html>

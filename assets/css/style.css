@@ -1,0 +1,306 @@
+@CHARSET "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Arial, Helvetica", sans-serif;
+  font-size: 110%; }
+
+.theme-pink, #categories, #testimonial {
+  background-color: #df2b31;
+  color: white; }
+
+.theme-dark, #moremov, #mail, footer {
+  background-color: #2c2d2f;
+  color: white; }
+
+.style-button, #spongebob input, #favmov form input, #moremov button, #mail form button {
+  border-radius: 40px;
+  border: 1px solid white;
+  height: 70px;
+  width: 160px;
+  background-color: transparent;
+  color: white; }
+
+.hover-button, #spongebob #leftbtn:hover, #spongebob #rightbtn:hover, #favmov #form input:hover, #moremov button:hover, #mail button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+.checkbox, #favmov #chbox1, #favmov #chbox2, #favmov #chbox3, #favmov #chbox4 {
+  padding-top: 45px;
+  float: left;
+  margin-left: 23%; }
+
+.head, header h1, #moremov h1, #testimonial h1, #mail h1 {
+  font-size: 250%;
+  font-weight: bold; }
+
+.hover, header a:hover, #categories li:hover, #favmov label:hover, #moremov figcaption:hover, #testimonial #testtext:hover {
+  text-shadow: 0px 0 15px white; }
+
+.shadow, header a, #categories ul li, #favmov label, #moremov figcaption, #testimonial #testtext {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+header {
+  height: 210px;
+  background-color: #2f2828; }
+  header h1 {
+    color: white;
+    text-align: center;
+    padding-top: 3.2%; }
+  header nav ul li {
+    padding-top: 2.6%;
+    float: left;
+    width: 19.8%;
+    text-align: center;
+    font-size: 150%; }
+  header a:link {
+    color: grey;
+    text-decoration: none; }
+  header a:visited {
+    color: grey; }
+  header a:hover {
+    color: white;
+    text-decoration: none; }
+
+#categories {
+  height: 290px;
+  text-align: center;
+  padding-top: 1%; }
+  #categories ul li {
+    margin-top: 1.3%; }
+  #categories li:hover {
+    opacity: 0.5; }
+
+#spongebob {
+  color: white;
+  height: 1000px;
+  background-image: url("images/spongebob.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  #spongebob h1 {
+    padding: 6.3% 0 6.3% 0;
+    text-align: center;
+    font-size: 470%;
+    text-shadow: 2px 2px grey;
+    font-weight: bold; }
+  #spongebob p {
+    padding: 0 21% 0 21%;
+    margin: 0 auto;
+    font-size: 230%;
+    text-shadow: 1px 1px grey; }
+  #spongebob input {
+    margin-top: 12%; }
+  #spongebob #leftbtn {
+    margin-left: 38%;
+    cursor: pointer; }
+  #spongebob #rightbtn {
+    margin-left: 1%;
+    cursor: pointer; }
+  #spongebob img {
+    height: 14%;
+    width: auto;
+    position: relative;
+    top: 331px;
+    left: -28%;
+    cursor: pointer; }
+  #spongebob img:hover {
+    height: 18.2%;
+    width: auto; }
+
+#favmov {
+  background-color: #2f2828;
+  color: white;
+  height: 780px;
+  padding-top: 90px; }
+  #favmov h2 {
+    font-size: 300%;
+    text-align: center;
+    font-weight: bold; }
+  #favmov p {
+    color: grey;
+    text-align: center;
+    padding: 5% 18% 3.4% 18%; }
+  #favmov form input {
+    position: relative;
+    left: -23%;
+    top: 410px; }
+  #favmov input[type=checkbox]:checked + label {
+    color: #df2b31; }
+  #favmov div input, #favmov div label {
+    margin-bottom: 10px; }
+  #favmov #chbox3 {
+    clear: both; }
+  #favmov #chbox4 {
+    padding-left: 0.2%; }
+  #favmov #chbox1, #favmov #chbox3 {
+    padding-left: 10%; }
+
+#moremov {
+  height: 4800px; }
+  #moremov h1 {
+    text-align: center;
+    padding: 4.3% 0 6.7% 0; }
+  #moremov button {
+    position: relative;
+    left: -35%;
+    top: 4400px;
+    cursor: pointer; }
+  #moremov figure {
+    padding-left: 19%; }
+  #moremov figcaption {
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    padding: 20px 0 40px 0;
+    position: relative;
+    top: -70px; }
+  #moremov figure img {
+    width: 99.4%; }
+  #moremov .black {
+    width: 99.4%;
+    height: 100px;
+    background-color: #2f2828;
+    position: relative;
+    top: -120px;
+    opacity: 0.7; }
+  #moremov .fa-eye, #moremov .fa-clock-o, #moremov .fa-heart {
+    font-size: 30px;
+    width: 32%;
+    text-align: center;
+    padding-top: 15px; }
+  #moremov .likes {
+    position: relative;
+    top: -125px;
+    display: inline-block;
+    text-align: center;
+    width: 32.4%; }
+  #moremov img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, 0.75);
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
+  #moremov img:hover {
+    -webkit-transform: scale(1.27);
+    -moz-transform: scale(1.27);
+    transform: scale(1.27);
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 15px 10px rgba(0, 185, 233, 0.75); }
+
+#testimonial {
+  height: 650px;
+  text-align: center;
+  padding-top: 35px; }
+  #testimonial .image-cropper {
+    margin-top: 45px;
+    width: 14%;
+    height: 41%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 43%; }
+  #testimonial img {
+    display: inline;
+    height: 100%;
+    width: auto;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease; }
+  #testimonial img:hover {
+    width: 300px;
+    height: 340px; }
+  #testimonial i {
+    padding-top: 25px;
+    padding-left: 0.4%; }
+  #testimonial p {
+    padding-top: 45px;
+    font-style: italic; }
+
+#mail {
+  height: 500px;
+  text-align: center; }
+  #mail h1 {
+    padding-top: 60px; }
+  #mail div input {
+    width: 13%;
+    height: 20px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    color: grey;
+    font-size: 130%;
+    padding-top: 50px;
+    text-align: center; }
+  #mail input {
+    -webkit-transition: width 2s;
+    transition: width 2s; }
+  #mail input:hover {
+    width: 40%;
+    text-align: left; }
+  #mail form button {
+    margin-top: 60px;
+    cursor: pointer; }
+
+footer {
+  height: 130px;
+  padding-top: 40px;
+  text-align: center; }
+  footer p {
+    padding-bottom: 5px; }
+  footer div {
+    margin-left: 46.3%;
+    padding-top: 20px; }
+  footer i {
+    float: left;
+    color: grey;
+    padding-right: 1.4%; }
+  footer #copyright {
+    color: grey; }
+  footer a {
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

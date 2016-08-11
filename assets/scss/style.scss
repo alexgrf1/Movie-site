@@ -1,0 +1,411 @@
+@import 'variables';
+@import 'reset';
+
+body {
+	font-family: $font;
+	font-size:110%;
+}
+
+.theme-pink {
+	background-color:$colorpink;
+	color:$color;
+}
+
+.theme-dark {
+	background-color:$colormov;
+	color:$color;
+}
+
+.style-button {
+	border-radius:40px;
+	border: 1px solid $color;
+	height:70px;
+	width:160px;
+	background-color:transparent;
+	color:$color;
+}
+.hover-button {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.checkbox {
+	padding-top:45px;
+	float:left;
+	margin-left:23%;
+}
+.head {
+	font-size:$size;
+	font-weight:bold;
+}
+.hover {
+	text-shadow: 0px 0 15px $color;
+}
+.shadow {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+header {
+
+	height:210px;
+	
+	background-color:$darkcolor;
+	
+	h1 {
+		color: $color;
+		text-align:center;
+		padding-top:3.2%;
+		@extend .head;
+	}
+	
+	nav ul li {
+		padding-top:2.6%;
+		float:left;
+		width: 19.8%;
+		text-align:center;	
+		font-size:150%;
+	}
+	
+	a {
+		@extend .shadow;
+	}
+	
+	a:link {
+		color:$mediumcolor;
+		text-decoration:none;
+	}
+
+	a:visited {
+    	color: $mediumcolor;
+	}
+	a:hover {
+		color:$color;
+		text-decoration:none;
+		@extend .hover;
+	}
+}
+
+#categories {
+	@extend .theme-pink;
+	height: 290px;
+	text-align:center;
+	padding-top: 1%;
+	ul li {
+		margin-top:1.3%;
+		@extend .shadow;
+	}
+	li:hover {
+		opacity: 0.5;
+		@extend .hover;
+	}
+}
+
+#spongebob {
+	color:$color;
+	height:1000px;
+	background-image:url("images/spongebob.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	h1 {
+		padding:6.3% 0 6.3% 0;
+		text-align:center;
+		font-size:470%;
+		text-shadow: 2px 2px $colgrey;
+		font-weight:bold;
+	}
+	p {
+		padding: 0 21% 0 21%;
+		margin:0 auto;
+		font-size:230%;
+		text-shadow: 1px 1px $colgrey;
+	}
+	input {
+		@extend .style-button;
+		margin-top:12%;
+	}
+	#leftbtn {
+		margin-left:38%;
+		cursor:pointer;
+	}
+	#leftbtn:hover {
+		@extend .hover-button;
+	}
+	#rightbtn:hover {
+		@extend .hover-button;
+	}
+	#rightbtn {
+		margin-left:1%;
+		cursor:pointer;
+	}
+	img {
+		height:14%;
+		width:auto;
+		position:relative;
+		top:331px;
+		left: -28%;
+		cursor:pointer;
+	}
+	img:hover {
+		height:18.2%;
+		width:auto;
+	}
+}
+
+#favmov {
+	background-color:$darkcolor;
+	
+	color:$color;
+	
+	height: 780px;
+	padding-top:90px;
+	
+	h2 {
+		font-size:300%;
+		text-align:center;
+		font-weight:bold;
+	}
+	
+	p {
+		color:$colgrey;
+		text-align:center;
+		padding: 5% 18% 3.4% 18%;
+	}
+	form input {
+		@extend .style-button;
+		position:relative;
+		left:-23%;
+		top:410px;
+	}
+	
+	#form input:hover {
+		@extend .hover-button;
+	}
+	
+	input[type=checkbox]:checked + label {
+	
+   		color: $colorpink;
+
+	}
+	
+	div input, div label {
+		margin-bottom: 10px;
+	}
+
+	#chbox1, #chbox2 {
+		@extend .checkbox;
+	}
+
+	#chbox3 {
+		clear:both;
+		@extend .checkbox;
+	}
+
+	#chbox4 {
+		@extend .checkbox;
+		padding-left:0.2%;
+	}
+	#chbox1, #chbox3 {
+		padding-left:10%;
+	}
+	label {
+		@extend .shadow;
+	}
+	label:hover {
+		@extend .hover;
+	}
+}
+
+#moremov {
+	@extend .theme-dark;
+	height: 4800px;
+	h1 {
+		text-align:center;
+		padding:4.3% 0 6.7% 0;
+		@extend .head;
+	}
+	button {
+		@extend .style-button;
+		position:relative;
+		left:-35%;
+		top:4400px;
+		cursor:pointer;
+	}
+	button:hover {
+		
+		@extend .hover-button;
+
+	}
+	figure {
+		padding-left:19%;
+	}
+
+	figcaption {
+		width:100%;
+		text-align:center;
+		font-size:200%;
+		padding:20px 0 40px 0;
+		position:relative;
+		top:-70px;
+		@extend .shadow;
+	}
+
+	figcaption:hover {
+		@extend .hover;
+	}
+
+	figure img {
+		width:99.4%;
+	}
+	.black {
+		width:99.4%;
+		height:100px;
+		background-color:$darkcolor;
+		position:relative;
+		top:-120px;
+		opacity:0.7;
+	}
+	.fa-eye, .fa-clock-o, .fa-heart {
+		font-size:30px;
+		width:32%;
+		text-align:center;
+		padding-top:15px;
+	}
+	.likes {
+		position:relative;
+		top:-125px;
+		display:inline-block;
+		text-align:center;
+		width:32.4%;
+	}
+	img {
+   	 	-webkit-transition: all 0.5s ease;
+    	-moz-transition: all 0.5s ease;
+    	transition: all 0.5s ease;
+    	-webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+		box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, .75);
+		-webkit-transition: all 0.7s ease;
+		transition: all 0.7s ease;
+	}
+
+	img:hover {
+    	-webkit-transform:scale(1.27);
+    	-moz-transform:scale(1.27);
+     	transform:scale(1.27);
+     	-webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+		box-shadow: 0px 0px 15px 10px rgba(0, 185, 233, .75);
+	}
+	
+}
+
+#testimonial {
+	@extend .theme-pink;
+	height:650px;
+	text-align:center;
+	padding-top:35px;
+	h1 {
+		@extend .head;
+	}
+	.image-cropper {
+		margin-top:45px;
+    	width: 14%;
+    	height: 41%;
+   	 	position: relative;
+   	 	overflow: hidden;
+   	 	border-radius: 50%;
+   	 	margin-left:43%;
+	}
+	img {
+    	display: inline;
+    	height: 100%;
+    	width: auto;
+    	-webkit-transition: all 1s ease;
+     	-moz-transition: all 1s ease;
+	}
+	img:hover {
+  		width: 300px;
+  		height: 340px;
+	}
+	i {
+		padding-top:25px;
+		padding-left:0.4%;
+	}
+	p {
+		padding-top:45px;
+		font-style:italic;
+	}
+	#testtext {
+		@extend .shadow;
+	}
+	#testtext:hover {
+		@extend .hover;
+	}
+}
+
+#mail {
+
+	@extend .theme-dark;
+	height:500px;
+	text-align:center;
+	
+	h1 {
+		padding-top:60px;
+		@extend .head;
+		
+	}
+	
+	div input {
+		width:13%;
+		height:20px;
+		border: 0;
+   	 	outline: 0;
+    	background: transparent;
+   		border-bottom: 1px solid $colgrey;
+    	color:$colgrey;
+    	font-size:130%;
+    	padding-top:50px;
+    	text-align:center;
+	}
+	input {
+    	-webkit-transition: width 2s; 
+    	transition: width 2s;
+	}
+
+	input:hover {
+    	width: 40%;
+    	text-align:left;
+	}
+	form button {
+		@extend .style-button;
+		margin-top:60px;
+		cursor:pointer;
+	}
+	
+	button:hover {
+		@extend .hover-button;
+	}
+}
+
+footer {
+	@extend .theme-dark;
+	height:130px;
+	padding-top:40px;
+	text-align:center;
+	p {
+		padding-bottom:5px;
+	}
+	div {
+		margin-left:46.3%;
+		padding-top:20px;
+	}
+	i {
+		float:left;
+		color:$colgrey;
+		padding-right:1.4%;
+	}
+	#copyright {
+		color:$colgrey;
+	}
+	a {
+		cursor:pointer;
+	}
+}
